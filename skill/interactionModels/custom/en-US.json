@@ -1,0 +1,49 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "faiq weather assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "WeatherIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "todays weather of {city}",
+            "{city} weather ",
+            "Whats the weather of {city}",
+            "temprature today ",
+            "update on weather",
+            "what is the weather today ",
+            "tell me the weather"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "4"
+}
